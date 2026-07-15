@@ -570,7 +570,7 @@
     }
 
     // ---------- Анимация TGS ----------
-    const tgsUrl = new URL('/static/pepe.tgs?v=' + Date.now(), window.location.href).href;
+    const tgsUrl = new URL('pepe.tgs?v=' + Date.now(), window.location.href).href;
     fetch(tgsUrl)
         .then(response => {
             if (!response.ok) {
